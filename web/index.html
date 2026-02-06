@@ -7,34 +7,68 @@
     <title>Create a Personal Portfolio Website using HTML and CSS | Codehal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <header>
-        <h2 class="logo"><span>S</span>akira.</h2>
-        <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-        </nav>
-        <a href="contact.html" class="btn-talk">Let's Talk</a>
-    </header>
+   <header>
+    <h2 class="logo"><span>D</span>emo.</h2>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#blog">Blog</a>
+        <a href="contact.html">Contact</a> <!-- <- fixed -->
+    </nav>
+    <a href="contact.html" class="btn-talk">Let's Talk</a> <!-- <- fixed -->
+</header>
+
     <section class="home">
         <div class="content">
            <h2>Hi, I'm <span>Sakira Khan</span></h2>
 <h4>Student at Metropolitan University, Bangladesh</h4>
-<p>I am a student learning web development. I am exploring HTML, CSS, and JavaScript through practical projects, and this portfolio showcases my work.</p>
+<p>I am a student learning web development. I am exploring HTML, CSS, and JavaScript through practical projects, and this portfolio showcases my work. </p>
+
             <div class="btn-group">
                 <a href="#">Hire Me</a>
                 <a href="#">See Projects</a>
             </div>
             <div class="social-icons">
                 <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
+<div class="home-photo">
+    <div class="photo-bg">
+        <img src="image.jpg" alt="Sakira">
+    </div>
+    <div class="signature">Sakira Khan</div>
+</div>
+
+ <!-- QUICK STATS -->
+    <div class="home-right">
+    <div class="vertical-line"></div> <!-- the line -->
+    <div class="quick-stats-wrapper">
+    <div class="quick-stats">
+        <div>
+            <h3>10+</h3>
+            <span>Projects</span>
+        </div>
+        <div>
+            <h3>1+</h3>
+            <span>Year Learning</span>
+        </div>
+        <div>
+            <h3>99%</h3>
+            <span>Client Satisfaction</span>
+        </div>
+       </div>
+    </div>
+</div>
+
+
     </section>
 </body>
 </html>
