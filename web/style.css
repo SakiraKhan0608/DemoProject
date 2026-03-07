@@ -7,7 +7,7 @@
 }
 header {
     position: fixed;
-
+    background-color: #ffffff;
     width: 100%;
     padding: 30px 100px;
     display: flex;
@@ -17,36 +17,36 @@ header {
 }
 .logo {
     font-size: 2em;
-    color: #555;
+    color: #181818;
 }
 .logo span {
-    color: #7081ed;
+    color: #03c2cf;
 }
 .navigation {
     margin-left: -300px;
 }
 .navigation a {
     font-size: 1.1em;
-    color: #555;
+    color: #181818;
     text-decoration: none;
     margin-right: 40px;
     font-weight: 500;
     transition: .3s;
 }
 .navigation a:hover {
-    color: #7081ed;
+    color: #03c2cf;
 }
 .btn-talk {
     color: #fff;
     text-decoration: none;
     padding: 8px 35px;
-    background: #7081ed;
+    background: linear-gradient(135deg, #03c2cf, #008c96);
     border-radius: 10px;
     font-weight: 500;
     transition: .3s;
 }
 .btn-talk:hover {
-    color: #7081ed;
+    color: #05959f;
     background: transparent;
 }
 .home {
@@ -60,18 +60,21 @@ header {
 .content {
      margin-top: 70px;
     max-width: 500px;
-    color:#575656;
+    color: #181818;
 }
 .content h2 {
     font-size: 2.8em;
      max-width: 500px;
 }
 .content h2 span {
-    color: #7081ed;
+    background: linear-gradient(135deg, #03c2cf, #008c96);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 .content h4 {
     font-size: 1.5em;
-    color:#5e5c5c;
+    color:#181818;
 }
 .content p {
     padding: 15px 0 40px 0;
@@ -83,25 +86,29 @@ header {
     color: #fff;
     text-decoration: none;
     padding: 10px 40px;
-    background: #7081ed;
+    background: linear-gradient(135deg, #03c2cf, #008c96) border-box;
     border-radius: 10px;
-    border: 2px solid #7081ed;
+    border: 2px solid transparent;
     font-weight: 500;
     transition: .3s;
 }
 .btn-group a:hover:nth-child(1) {
-    color: #7081ed;
+    color: #05959f;
     background: transparent;
 }
 .btn-group a:nth-child(2) {
-    color: #7081ed;
-    background: transparent;
+    color: #05959f;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(135deg, #03c2cf, #008c96) border-box;
+    border: 2px solid transparent;
+    border-radius: 10px;
     margin-left: 30px;
     padding: 10px 30px;
 }
 .btn-group a:hover:nth-child(2) {
     color: #fff;
-    background: #7081ed;
+    background: linear-gradient(135deg, #03c2cf, #008c96) border-box;
+    border: 2px solid transparent;
 }
 .social-icons {
     position: absolute;
@@ -111,13 +118,13 @@ header {
     display: inline-block;
     width: 35px;
     height: 35px;
-    background: #7081ed;
+    background: linear-gradient(135deg, #03c2cf, #008c96);
     border-radius: 50%;
     margin-right: 15px;
     text-align: center;
     line-height: 35px;
     border: 2px solid #fff;
-    outline: 3px solid #7081ed;
+    outline: 3px solid #03c2cf;
     transition: .3s;
 }
 .social-icons a:hover {
@@ -155,11 +162,12 @@ header {
 .photo-bg {
     width: 420px;
     height: 420px;
-    background: rgba(59, 130, 246, 0.15);
-    border-radius: 50%;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(135deg, rgba(3,194,207,0.2), rgba(8,140,150,0.1));
+    
 }
 
 .photo-bg img {
@@ -172,23 +180,31 @@ header {
 }
 
 
-.quick-stats {
-    display: flex;
-    flex-direction: column;   
-    gap: 15px;
-    margin: 20px 0 25px 0;
+.quick-stats div {
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(2, 98, 108, 0.1); /* Very soft shadow */
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 10px;
 }
 
 
 .quick-stats h3 {
-    color: #6679f5;
+    background: linear-gradient(180deg, #71f4fd, #042f75);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-size: 1.3em;
     min-width: 45px;
-}
+    font-weight: bold;    background-color: rgba(3,194,207,0.1);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 5px solid rgba(3,194,207,0.2);}
 
 .quick-stats span {
     font-size: 0.9em;
-    color: #626262;
+    color: #2a2828;
 }
 
 .quick-stats {
@@ -205,8 +221,8 @@ header {
 
 .vertical-line {
     width: 1.5px;                   
-    height: 500px;                  
-    background-color: #afadad;      
+    height: 600px;                  
+    background-color: #b0aeae;      
     margin-left: 150px;
     margin-top: 70px;
 }
@@ -222,7 +238,7 @@ header {
             display: flex;
             gap: 60px;
             flex-wrap: wrap;
-            color: #555;
+            color: #181818;
         }
 
         .about-left {
@@ -231,14 +247,17 @@ header {
 
         .about-left h1 {
             font-size: 2.6em;
-            color: #7081ed;
-            margin-bottom: 15px;
+              margin-bottom: 15px;
+            background: linear-gradient(135deg, #03c2cf, #073336);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
         }
 
         .about-left h2 {
             font-size: 1.6em;
             margin: 20px 0 10px 0;
-            color: #555;
+            color: #181818;
         }
 
         .about-left p {
@@ -263,7 +282,11 @@ header {
             content: "✔";
             position: absolute;
             left: 0;
-            color: #7081ed;
+            background: linear-gradient(90deg, #39eaf7, #0541a2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
         }
 
         .about-right {
@@ -277,11 +300,11 @@ header {
         .about-photo-bg {
             width: 350px;
             height: 350px;
-            background: rgba(112, 129, 237, 0.15);
-            border-radius: 50%;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
             display: flex;
             align-items: center;
             justify-content: center;
+            background: linear-gradient(135deg, rgba(3,194,207,0.2), rgba(8,140,150,0.1));
         }
 
         .about-photo-bg img {
@@ -291,13 +314,13 @@ header {
             object-fit: cover;
             background: white;
             padding: 6px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            
         }
 
 
         .section-title {
             font-size: 1.5em;
-            color: #7081ed;
+            color: #03c2cf;
             margin-top: 40px;
             margin-bottom: 15px;
         }
@@ -333,17 +356,20 @@ header {
 .contact-container h2 {
     font-size: 2.3em;
     margin-bottom: 15px;
-    color: #555;
+     color: #181818;
 }
 
 .contact-container h2 span {
-    color: #7081ed;
+    background: linear-gradient(90deg, #03c2cf, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
 }
 
 .contact-container p {
     font-size: 16px;
     margin-bottom: 40px;
-    color: #555;
+    color: #181818;
 }
 
 .contact-container form input,
@@ -362,8 +388,8 @@ header {
     padding: 12px 20px;
     font-size: 16px;
     border-radius: 10px;
-    border: 2px solid #7081ed;
-    background: #7081ed;
+    background: linear-gradient(135deg, #03c2cf, #008c96) border-box;
+    border: 2px solid transparent;
     color: #fff;
     cursor: pointer;
     transition: 0.3s;
@@ -371,7 +397,7 @@ header {
 
 .contact-container form .btn-talk:hover {
     background: transparent;
-    color: #7081ed;
+    color: #03c2cf;
 }
 
 
@@ -379,7 +405,7 @@ header {
     display: inline-block;
     width: 45px;
     height: 45px;
-    background: #7081ed;
+    background: linear-gradient(135deg, #03c2cf, #008c96);
     color: #fff;
     border-radius: 50%;
     margin-right: 15px;
@@ -411,12 +437,12 @@ header .header-social-icons a {
     display: inline-block;
     width: 35px;
     height: 35px;
-    background: #7081ed;
+    background: linear-gradient(135deg, #03c2cf, #008c96);
     color: #fff;
     border-radius: 50%;
     text-align: center;
     border: 2px solid #fff;
-    outline: 3px solid #7081ed;
+    outline: 3px solid #03c2cf;
     line-height: 35px;
     transition: 0.3s;
 }
@@ -445,13 +471,13 @@ header .header-social-icons a:hover {
 .skills-header h1 {
     font-size: 42px;
     margin-bottom: 15px;
-    color: #555;
+    color: #181818;
 }
 
 .skills-header p {
     max-width: 650px;
     margin: auto;
-    color: #555;
+    color: #181818;
 }
 
 .skills-grid {
@@ -461,10 +487,10 @@ header .header-social-icons a:hover {
 }
 
 .skills-card {
-    background: #fff;
+    background: #ffffff;
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: 0.3s;
 }
 
@@ -474,7 +500,10 @@ header .header-social-icons a:hover {
 
 .skills-card h2 {
     margin-bottom: 25px;
-    color: #7081ed;
+    background: linear-gradient(135deg, #03c2cf, #008c96);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .skill-item {
@@ -498,7 +527,7 @@ header .header-social-icons a:hover {
 .skill-fill {
     height: 100%;
     width: 0;
-    background: linear-gradient(90deg, #7081ed, #3b82f6);
+    background: linear-gradient(90deg, #03c2cf, #3b82f6);
     border-radius: 10px;
     animation: fillBar 1.5s ease forwards;
     width: var(--width);
@@ -516,14 +545,17 @@ header .header-social-icons a:hover {
 }
 
 .learning-section h2 {
-    color: #7081ed;
+   background: linear-gradient(135deg, #03c2cf, #008c96);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 15px;
 }
 
 .learning-section p {
     max-width: 600px;
     margin: auto;
-    color: #555;
+    color: #181818;
 }
 
 
@@ -533,7 +565,10 @@ header .header-social-icons a:hover {
 }
 
 .soft-skills h2 {
-    color: #7081ed;
+    background: linear-gradient(135deg, #03c2cf, #008c96);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 20px;
 }
 
@@ -548,13 +583,13 @@ header .header-social-icons a:hover {
 }
 
 .soft-grid div {
-    background: #f5f7ff;
+    background: #eef0ff;
     padding: 12px;
     border-radius: 10px;
     width: 180px;           
     text-align: center;
     font-weight: 500;
-    color: #373335;
+    color:#000000;
     box-sizing: border-box;
 }
 
