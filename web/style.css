@@ -92,10 +92,15 @@ header {
     font-weight: 500;
     transition: .3s;
 }
+
 .btn-group a:hover:nth-child(1) {
-    color: #05959f;
-    background: transparent;
+   
+   color: #05959f;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(135deg, #03c2cf, #008c96) border-box;
+    border: 2px solid transparent;
 }
+
 .btn-group a:nth-child(2) {
     color: #05959f;
     background: linear-gradient(white, white) padding-box,
@@ -106,7 +111,7 @@ header {
     padding: 10px 30px;
 }
 .btn-group a:hover:nth-child(2) {
-    color: #fff;
+    color: #ffffff;
     background: linear-gradient(135deg, #03c2cf, #008c96) border-box;
     border: 2px solid transparent;
 }
@@ -204,7 +209,7 @@ header {
 
 .quick-stats span {
     font-size: 0.9em;
-    color: #2a2828;
+    color: #000000;
 }
 
 .quick-stats {
@@ -598,3 +603,89 @@ header .header-social-icons a:hover {
     box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
+
+
+
+
+/* PROJECTS PAGE */
+.projects-page{
+    padding:120px 10% 80px;
+}
+
+.projects-header{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.projects-header h1{
+    font-size:42px;
+    margin-bottom:15px;
+    color:#000000;
+}
+
+.projects-header p{
+    max-width:650px;
+    margin:auto;
+    color:#000000;
+}
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(320px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    background:#ffffff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    transition:0.3s;
+    position:relative;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+
+.project-card h2{
+    margin-bottom:15px;
+    background:linear-gradient(135deg,#03c2cf,#008c96);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.project-card p{
+    color:#000000;
+    margin-bottom:20px;
+}
+
+.project-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.project-tags span{
+    background:#eef0ff;
+    padding:6px 12px;
+    border-radius:8px;
+    font-size:14px;
+    font-weight:500;
+}
+
+/* Github icon */
+
+.github-link{
+    position:absolute;
+    top:25px;
+    right:25px;
+    font-size:22px;
+    color:#000000;
+    transition:0.3s;
+}
+
+.github-link:hover{
+    color:#08abb7;
+}
+
